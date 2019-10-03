@@ -1,0 +1,13 @@
+#logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(255, 0, 0, 0.445); */
+}
+
+#logoHeader {
+  min-width: 400px;
+  /* min-height: 150px; */
+  max-width: 66.6%;
+  /* max-height: 40vh; */
+}
