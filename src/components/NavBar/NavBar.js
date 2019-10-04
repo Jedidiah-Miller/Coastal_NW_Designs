@@ -4,12 +4,14 @@ import NarrowNav from './NarrowNav';
 import './styles.css';
 
 
-export default function NavBar() {
+export default function NavBar(props) {
+
+  const { handleRouteChange } = props;
 
   return (
     <nav>
-      <WideNav />
-      <NarrowNav />
+      <WideNav handleRouteChange={handleRouteChange} />
+      <NarrowNav handleRouteChange={handleRouteChange} />
     </nav>
   )
 }

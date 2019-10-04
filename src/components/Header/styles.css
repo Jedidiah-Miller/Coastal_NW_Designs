@@ -2,12 +2,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  padding: 30px;
   /* background-color: rgba(255, 0, 0, 0.445); */
 }
 
-#logoHeader {
-  min-width: 400px;
-  /* min-height: 150px; */
+#logo-box {
+  /* size */
+  min-width: 300px;
   max-width: 66.6%;
-  /* max-height: 40vh; */
+  /* border */
+  border: solid 3px;
+  border-color: rgba(204, 158, 5, 0.562);
+  border-radius: 3px;
+  border-bottom: none;
+
+  padding: 10px;
+  /* background-color: rgb(0, 38, 255); */
+}
+
+
+#logo-box h1 {
+  color: black;
+  font-weight: 200;
+  white-space: nowrap;
+  font-size: x-large
 }

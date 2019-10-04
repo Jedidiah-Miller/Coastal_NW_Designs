@@ -8,13 +8,11 @@
   margin: 4vh;
 }
 
-#main-image {
-  width: 90%;
-  align-self: center;
-}
-
 
 @media (max-width: 650px) {
+  #main-image {
+    width: 95%;
+  }
   .dual-image {
     display: block;
   }
@@ -25,6 +23,9 @@
 }
 
 @media (min-width: 651px) {
+  #main-image {
+    width: 90%;
+  }
   .dual-image {
     display: inline-block;
   }

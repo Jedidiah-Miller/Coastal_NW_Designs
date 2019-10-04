@@ -2,10 +2,10 @@ import React from 'react';
 import NavLinks from './NavLinks';
 
 
-export default function WideNav() {
+export default function WideNav(props) {
   return (
     <div id="wide-nav">
-      <NavLinks />
+      <NavLinks handleRouteChange={props.handleRouteChange} />
     </div>
   )
 }

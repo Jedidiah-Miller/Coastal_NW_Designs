@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavLinks from './NavLinks';
 import HamburgerMenuButton from 'react-hamburger-menu';
-import './narrow-nav.css';
+
 
 export default class NarrowNav extends Component {
 
@@ -10,15 +10,24 @@ export default class NarrowNav extends Component {
   };
 
   toggleOpen = () => this.setState({isOpen: !this.state.isOpen});
+
+  getStyles = isOpen => {
+    return {
+      narrowNav: {
+        height: isOpen ? '20%' : 0,
+        transition: 'height 0.3s ease-in-out',
+        zIndex: 2,
+      }
+    }
+  }
   
   render() {
 
     const { isOpen } = this.state;
-    const styles = {
-      height: isOpen ? '20%' : 0
-    }
+    const styles = this.getStyles(isOpen);
+
     return (
-      <div id="narrow-nav" style={styles}>
+      <div id="narrow-nav" style={styles.narrowNav}>
         <HamburgerMenuButton
           isOpen={isOpen}
           menuClicked={this.toggleOpen.bind(this)}
@@ -26,12 +35,12 @@ export default class NarrowNav extends Component {
           height={22}
           strokeWidth={2}
           rotate={0}
-          color='black'
-          borderRadius={0}
+          color='white'
+          borderRadius={3}
           animationDuration={0.3}
         />
         <div id="links">
-          <NavLinks />
+          <NavLinks handleRouteChange={this.props.handleRouteChange} />
         </div>
       </div>
     )
