@@ -1,0 +1,33 @@
+#bg {
+  background-image: url('../../assets/HomePage/main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(26, 25, 25, 0.671)); */
+}
+
+#header-container {
+  height: auto;
+  position: relative;
+}
+
+figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+
+#frame {
+  align-self: center;
+  height: 100vmin;
+  width: 100vw;
+}
+
+/* logo */
+figure figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -80%);
+  z-index: 5;
+}

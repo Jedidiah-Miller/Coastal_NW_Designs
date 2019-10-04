@@ -7,7 +7,20 @@
 #main-content hr {
   margin: 4vh;
 }
+#main-content h1 {
+  font-weight: 200;
+}
 
+.full-image {
+  min-width: 90%;
+  width: 100%;
+}
+
+.full-image img {
+  min-width: 90%;
+  width: 95%;
+  max-width: 95%;
+}
 
 @media (max-width: 650px) {
   #main-image {
@@ -17,6 +30,7 @@
     display: block;
   }
   .dual-image img {
+    margin: 2.5%;
     min-width: 95%;
     width: 95%;
   }
@@ -24,7 +38,7 @@
 
 @media (min-width: 651px) {
   #main-image {
-    width: 90%;
+    width: 100%;
   }
   .dual-image {
     display: inline-block;
