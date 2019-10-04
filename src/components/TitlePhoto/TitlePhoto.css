@@ -3,7 +3,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(26, 25, 25, 0.671)); */
 }
 
 #header-container {
@@ -21,13 +20,14 @@ figure, figcaption {
   align-self: center;
   height: 100vmin;
   width: 100vw;
+  /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(26, 25, 25, 0.349)); */
 }
 
 /* logo */
 figure figcaption {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -80%);
+  top: 35%;
+  transform: translate(-50%, -50%);
   z-index: 5;
 }

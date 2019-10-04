@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../Header/LogoHeader';
-import { mainPhoto } from '../../assets/HomePage';
 import './TitlePhoto.css';
 
 
