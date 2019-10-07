@@ -1,7 +1,7 @@
 /**
  * email to use in the mailto link
  */
-export const contactEmail = 'jedidiah.a.miller@gmail.com';
+export const contactEmail = 'coastalnwdesigns@gmail.com';
 /**
  * subject for the email
  */

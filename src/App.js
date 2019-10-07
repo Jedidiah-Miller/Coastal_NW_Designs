@@ -16,12 +16,14 @@ export default class App extends Component {
 
   componentDidMount() {
     console.log('mounted');
+    const arr = window.location.href.split('/'); // I dont like these bet for now they're fine
+    this.handleRouteChange(arr[arr.length - 1]); // I dont like these bet for now they're fine
   }
 
   handleRouteChange(r) {
     this.setState({
       currentRoute: r,
-      isHomePage: r === '/' || r === 'home'
+      isHomePage: r === '' || r === '/' || r === 'home'
     });
   }
 

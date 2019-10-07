@@ -1,12 +1,22 @@
 import React from 'react';
-import { MailtoButton } from '../components/Contact';
+import { withRouter } from 'react-router-dom';
+import { MailtoButton, ContactCard } from '../components/Contact';
 
 
-export default function ContactScreen() {
+function ContactScreen() {
   return (
     <div id="contact-container">
-      <h1>contact</h1>
+      <ContactCard />
+      <h2 style={styles.h2}>or</h2>
       <MailtoButton />
     </div>
   )
+}
+
+export default withRouter(ContactScreen);
+
+const styles = {
+  h2: {
+    fontWeight: 300
+  }
 }
