@@ -1,1 +1,0 @@
-export { default as bathroomPhoto } from './photo1.jpg';

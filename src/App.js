@@ -39,7 +39,7 @@ export default class App extends Component {
             <Route path='/about' component={AboutScreen} />
             <Route path='/contact' component={ContactScreen} />
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </BrowserRouter>
       </div>
     );
