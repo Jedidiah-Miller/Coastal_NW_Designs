@@ -1,13 +1,13 @@
 import React from 'react';
 import TitleLogo from '../TitlePhoto/TitlePhoto';
-import { photo1, photo2, photo3, photo4, photo5 } from '../../assets/HomePage';
+import { photo1, photo2, photo3, photo4, photo5 } from './ImageData';
 import LazyLoad from 'react-lazyload';
-import './styles.css'
+import './styles.css';
 
 
 export default function MainContent() {
   return (
-    <LazyLoad>
+    <LazyLoad once={true}>
       <div id="main-content">
         <TitleLogo />
         <hr/>
