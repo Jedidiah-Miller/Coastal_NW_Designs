@@ -1,6 +1,6 @@
 import React from 'react';
 import WideNav from './WideNav';
-import NarrowNav from './NarrowNav';
+import NarrowNav from './MobileNav';
 import './styles.css';
 
 
