@@ -6,7 +6,7 @@ export default function LogoHeader() {
   return (
     <div id="logoContainer" >
       <div id="logo-box">
-        <h1>coastal northwest designs</h1>
+        <h1 id="logo-title">coastal northwest designs</h1>
       </div>
     </div>
   )

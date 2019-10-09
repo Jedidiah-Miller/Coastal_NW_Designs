@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HamburgerButton from './HamburgerButton';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
@@ -14,7 +15,7 @@ export default class MobileNav extends Component {
     isOpen: false
   }
 
-  toggleDrawer = isOpen => this.setState({isOpen});
+  toggleDrawer = (isOpen = true) => this.setState({isOpen});
 
   sideList() {
 
@@ -52,7 +53,10 @@ export default class MobileNav extends Component {
 
     return (
       <div id="narrow-nav">
-        <Button onClick={() => this.toggleDrawer(true)}>Open menu</Button>
+        <HamburgerButton
+          toggleDrawer={this.toggleDrawer.bind(this)}
+          isOpen={isOpen}
+        />
         <SwipeableDrawer
           open={isOpen}
           onClose={() => this.toggleDrawer(false)}

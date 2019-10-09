@@ -1,9 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+import { Card, CardActionArea, CardContent, CardMedia } from '@material-ui/core';
+import cardPhoto from '../../assets/Contact/dPass.jpg'
 import Typography from '@material-ui/core/Typography';
 import { contactEmail } from './ContactData';
 
@@ -29,15 +27,14 @@ export default function ContactCard() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image={cardPhoto}
         />
-        <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Contact
           </Typography>
+        <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-            {contactEmail}
+            email: {contactEmail}
           </Typography>
         </CardContent>
       </CardActionArea>

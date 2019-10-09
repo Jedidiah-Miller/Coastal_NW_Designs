@@ -7,3 +7,7 @@
   border-top: 1px solid rgba(126, 125, 125, 0.527);
   background-color: rgb(176, 176, 192);
 }
+
+#app-footer #footer-text {
+  margin-top: 20px;
+}
