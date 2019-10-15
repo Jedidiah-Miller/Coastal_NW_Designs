@@ -1,18 +1,20 @@
 import React from 'react';
-import { par1, par2} from './AboutData';
+import { title, par1, par2 } from './AboutData';
 import './styles.css'
 
 
+export default function AboutText({data = [par1, par2]}) {
 
-export default function AboutText() {
   return (
     <div id="text-container">
-      <div id="text-box">
-        <p>{par1}</p>
-      </div>
-      <div id="text-box">
-        <p>{par2}</p>
-      </div>
+      <h1 id="about-title">{title}</h1>
+      {data.map((par, i) =>
+        <div id="text-box" key={i}>
+          <p className="text-box-text">
+            {par}
+          </p>
+        </div>
+      )}
     </div>
   )
 }

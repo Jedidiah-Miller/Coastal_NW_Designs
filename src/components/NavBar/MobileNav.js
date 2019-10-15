@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import HamburgerButton from './HamburgerButton';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
@@ -30,16 +29,17 @@ export default class MobileNav extends Component {
       >
         <List>
           {Routes.map((route, i) => (
-            <ListItem button key={i}>
-              <NavLink
-                className="narrow-navLink"
-                key={i}
-                to={route.path}
-                onClick={() => handleRouteChange(route.path)}
-              >
+            <NavLink
+              key={i}
+              className="narrow-navLink"
+              key={i}
+              to={route.path}
+              onClick={() => handleRouteChange(route.path)}
+            >
+              <ListItem button>
                 <ListItemText primary={route.name} />
-              </NavLink>
-            </ListItem>
+              </ListItem>
+            </NavLink>
           ))}
         </List>
         <Divider />

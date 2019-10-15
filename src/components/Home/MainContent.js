@@ -11,7 +11,7 @@ export default function MainContent() {
       <div id="main-content">
         <TitleLogo />
         <hr/>
-        <h1>Distinctive Residential and Commercial Interior Design</h1>
+        <h1>Distinctive and Unique Design</h1>
         <div className="dual-image">
           <img src={photo1} alt="🏠" />
           <img src={photo2} alt="🏠" />

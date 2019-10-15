@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardActionArea, CardContent, CardMedia } from '@material-ui/core';
 import cardPhoto from '../../assets/Contact/dPass.jpg'
 import Typography from '@material-ui/core/Typography';
-import { contactEmail } from './ContactData';
+import Link from '@material-ui/core/Link';
+import { contactEmail, contactPhoneNumbers } from './ContactData';
 
 
 const useStyles = makeStyles({
@@ -11,6 +12,7 @@ const useStyles = makeStyles({
     margin: 'auto',
     marginTop: '12vh',
     maxWidth: 345,
+    pointerEvents: 'visible'
   },
   media: {
     height: 140,
@@ -32,10 +34,22 @@ export default function ContactCard() {
           <Typography gutterBottom variant="h5" component="h2">
             Contact
           </Typography>
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            email: {contactEmail}
-          </Typography>
+        <CardContent className="card-content">
+          {contactPhoneNumbers.map((n, i) =>
+          <div>
+            {n.name + ": " } 
+            <Link href={"tel:" + n.n} key={i} type="phone">
+              {n.n}
+            </Link>
+            <br/>
+          </div>
+          )}
+          <span>
+            {"email: "}
+            <Link type="email">
+              {contactEmail}
+            </Link>
+          </span>
         </CardContent>
       </CardActionArea>
     </Card>
