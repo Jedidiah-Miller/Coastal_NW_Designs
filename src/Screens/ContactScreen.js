@@ -1,15 +1,22 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { MailtoButton, ContactCard, ContactPaper } from '../components/Contact';
+import { MailtoButton, ContactCard } from '../components/Contact';
+import { Helmet } from 'react-helmet';
 
 
 function ContactScreen() {
   return (
     <div id="contact-container">
       <ContactCard />
-      {/* <ContactPaper /> */}
       <h2 style={styles.h2}>or</h2>
       <MailtoButton />
+      <Helmet>
+        <title>contact us</title>
+        <meta
+          name="description"
+          content="coastal northwest designs contact page"
+        />
+      </Helmet>
     </div>
   )
 }

@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import HamburgerButton from './HamburgerButton';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import { List, Divider, ListItem, ListItemText } from '@material-ui/core';
 import { Routes } from '../../routes/routes';
 import { NavLink } from 'react-router-dom';
 
@@ -32,7 +29,6 @@ export default class MobileNav extends Component {
             <NavLink
               key={i}
               className="narrow-navLink"
-              key={i}
               to={route.path}
               onClick={() => handleRouteChange(route.path)}
             >

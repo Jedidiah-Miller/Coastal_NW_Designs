@@ -1,2 +1,3 @@
 # Coastal Northwest Designs
-### url: coming soon
+### built with React
+### url: coastalnorthwestdesigns.com
